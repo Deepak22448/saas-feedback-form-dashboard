@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SaaS Platform for Feedback Form Integration
 
-## Getting Started
+This is the main platform that allows users to register, create projects, and integrate the feedback form web component provided by our service. The platform is built using Next.js, Drizzle ORM, Clerk for authentication, Tailwind CSS, TypeScript, and Stripe for payment processing.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **User Registration**: Register and manage your account using Clerk for secure authentication.
+- **Project Management**: Create and manage projects, each with a unique `project-id` that can be used to integrate the feedback form web component.
+- **Seamless Integration**: Easily embed the feedback form in your projects with minimal configuration.
+- **Payment Processing**: Integrated with Stripe for managing subscriptions and payments.
+- **TypeScript Support**: Ensuring type safety across the application.
+- **Tailwind CSS Styling**: Fully customizable UI with Tailwind CSS.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[![Tech Stck](https://skillicons.dev/icons?i=nextjs,typescript,supabase,postgresql,tailwindcss)](https://skillicons.dev)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js**: Server-side rendering and static site generation.
+- **Drizzle ORM**: Database management and querying.
+- **Clerk**: Authentication and user management.
+- **Tailwind CSS + Shadcn**: Utility-first CSS framework for styling.
+- **TypeScript**: Strongly typed JavaScript for enhanced developer experience.
+- **Stripe**: Payment processing for handling subscriptions.
 
-## Learn More
+## Installation
 
-To learn more about Next.js, take a look at the following resources:
+To set up the project locally, follow these steps:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. **Clone the repository**:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/USER_NAME/saas-feedback-form-dashboard
+   cd saas-platform
+   ```
 
-## Deploy on Vercel
+2. **Install dependencies**:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   yarn install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+3. **Set up environment variables**:
+
+   Create a `.env` file in the root directory then copy the content of `.env.example` and fill the env variables.
+
+4. **Start the development server**:
+   ```bash
+   yarn dev
+   ```
+
+## Usage
+
+### Register and Create Projects
+
+1. **Register**: Sign up on the platform using your email or social accounts.
+2. **Create a Project**: After registering, navigate to the "Projects" section and create a new project. Each project will be assigned a unique `project-id`.
+3. **Integrate the Feedback Form**: Use the `project-id` to embed the feedback form component on your website as described in the [Feedback Form Component Documentation](https://github.com/Deepak22448/saas-feedback-form-widget/).
+
+### Managing Payments
+
+The platform integrates with Stripe to manage subscriptions. Ensure that your payment information is up-to-date to continue using the service.
