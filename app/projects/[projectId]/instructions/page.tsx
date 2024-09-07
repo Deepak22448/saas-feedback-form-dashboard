@@ -18,7 +18,7 @@ const InstructionsPage: FC<InstructionsPageProps> = ({ params }) => {
       <Code>
         {`<feedback-form project-id="${params.projectId}"></feedback-form>`}
         <br />
-        {`<script src="${process.env.NEXTPUBLIC_FEEDBACK_FORM_URL}/feedback-form.umd.js"></script>`}
+        {`<script src="${process.env.NEXT_PUBLIC_FEEDBACK_FORM_URL}/feedback-form.umd.js"></script>`}
       </Code>
     </MaxWidthWrapper>
   );
