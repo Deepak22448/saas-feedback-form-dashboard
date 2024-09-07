@@ -42,6 +42,7 @@ export const ProjectList: FC<ProjectListProps> = async ({ userId }) => {
       {!isSubscribed && userProjects.length < MAX_FREE_PROJECTS ? (
         <CreateProjectDialog />
       ) : null}
+      {isSubscribed ? <CreateProjectDialog /> : null}
     </>
   );
 };
