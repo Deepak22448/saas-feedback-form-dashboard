@@ -29,7 +29,6 @@ export const metadata: Metadata = {
     title: "Customizable Feedback Form SaaS",
     description:
       "Register now to create projects and integrate feedback forms into your site using our SaaS platform.",
-    images: "/og-image.png",
   },
 };
 
