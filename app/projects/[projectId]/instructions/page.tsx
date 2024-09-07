@@ -10,7 +10,7 @@ interface InstructionsPageProps {
 
 const InstructionsPage: FC<InstructionsPageProps> = ({ params }) => {
   return (
-    <MaxWidthWrapper className="mt-4">
+    <MaxWidthWrapper className="mt-4 min-h-screen">
       <h1 className="text-xl font-bold mb-1">Start Collecting Feedback</h1>
       <p className="text-lg text-secondary-foreground">
         Embed the code in our site

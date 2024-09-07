@@ -32,24 +32,27 @@ const ProjectDetailsPage: FC<ProjectDetailsPageProps> = async ({ params }) => {
   }
 
   return (
-    <MaxWidthWrapper className="mt-4 space-y-8">
-      <div className="flex items-start justify-between">
+    <MaxWidthWrapper className="mt-4 space-y-8 min-h-screen">
+      <div className="flex items-start justify-between gap-x-5">
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">{project.name}</h1>
           <h2 className="text-muted-foreground text-xl">
             {project.description}
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati
+            illo ut labore non nostrum eaque repudiandae odio quam soluta fugit.
           </h2>
         </div>
         <div className="flex flex-col gap-3">
-          <Link
+          <a
             href={project.URL}
+            target="_blank"
             className={buttonVariants({
               variant: "outline",
             })}
           >
             <GlobeIcon className="mr-2 size-4" />
             Visit
-          </Link>
+          </a>
           <Link
             href={`/projects/${project.id}/instructions`}
             className={buttonVariants({ variant: "secondary" })}
