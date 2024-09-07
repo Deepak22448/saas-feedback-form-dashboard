@@ -3,6 +3,8 @@ import { ClerkProvider } from "@clerk/nextjs";
 import "./globals.css";
 import { PageHeader } from "@/components/page-header";
 import { Footer } from "@/components/footer";
+import { FeedbackForm } from "@/components/feedback-form";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://saas-feedback-form-dashboard.vercel.app"),
@@ -44,7 +46,9 @@ export default function RootLayout({
           <PageHeader />
           {children}
           <Footer />
+          <FeedbackForm />
         </body>
+        <Script src="https://saas-feedback-form-widget.vercel.app/feedback-form.umd.js"></Script>
       </html>
     </ClerkProvider>
   );
