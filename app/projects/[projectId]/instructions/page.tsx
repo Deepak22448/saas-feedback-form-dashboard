@@ -16,9 +16,10 @@ const InstructionsPage: FC<InstructionsPageProps> = ({ params }) => {
         Embed the code in our site
       </p>
       <Code>
-        {`<feedback-form project-id="${params.projectId}"></feedback-form>`}
-        <br />
-        {`<script src="${process.env.NEXT_PUBLIC_FEEDBACK_FORM_URL}/feedback-form.umd.js"></script>`}
+        {`
+          <feedback-form project-id="${params.projectId}"></feedback-form>\n
+          <script src="${process.env.NEXT_PUBLIC_FEEDBACK_FORM_URL}/feedback-form.umd.js"></script>
+        `}
       </Code>
     </MaxWidthWrapper>
   );

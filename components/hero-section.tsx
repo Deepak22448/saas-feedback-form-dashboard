@@ -25,7 +25,7 @@ export const Hero = () => {
                     Get Started
                   </Button>
                   <Button variant="secondary" asChild>
-                    <Link href="https://github.com">
+                    <Link href="https://github.com/Deepak22448/saas-feedback-form-dashboard">
                       <GithubIcon className="w-4 h-4 mr-2" />
                       GitHub
                     </Link>
